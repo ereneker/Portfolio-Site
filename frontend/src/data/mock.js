@@ -2,10 +2,10 @@
 // All data is mock and will be replaced with backend API calls
 
 export const siteInfo = {
-  name: "KSENIA SEREDA",
-  title: "DIRECTOR OF PHOTOGRAPHY",
-  email: "info@kseniasereda.com",
-  copyright: "\u00a9 2025 KS",
+  name: "EREN EKER",
+  title: "PROGRAMMER",
+  email: "ereneker5@gmail.com",
+  copyright: "\u00a9 2025 EE",
 };
 
 export const navLinks = [
@@ -122,14 +122,11 @@ export const cvData = {
 };
 
 export const contactInfo = {
-  email: "info@kseniasereda.com",
-  representation: [
-    { name: "WME (William Morris Endeavor)", contact: "Agent", location: "Los Angeles, CA" },
-    { name: "Anonymous Content", contact: "Management", location: "Los Angeles, CA" },
-  ],
+  email: "ereneker5@gmail.com",
+  representation: [],
   social: [
-    { platform: "Instagram", url: "https://instagram.com" },
-    { platform: "IMDb", url: "https://imdb.com" },
-    { platform: "Vimeo", url: "https://vimeo.com" },
+    { platform: "LinkedIn", url: "https://www.linkedin.com/in/ereneker5/" },
+    { platform: "GitHub", url: "https://github.com/ereneker" },
+    { platform: "itch.io", url: "https://ereneker.itch.io/" },
   ],
 };

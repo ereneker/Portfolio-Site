@@ -116,7 +116,7 @@ const Layout = ({ children }) => {
             {siteInfo.copyright}
           </p>
           <p className="text-[10px] tracking-[0.25em] text-white/20 font-light uppercase">
-            Director of Photography
+            Programmer
           </p>
         </div>
       </footer>

@@ -58,20 +58,22 @@ const ContactsPage = () => {
       </div>
 
       {/* Representation */}
-      <div className="mb-16">
-        <p className="text-[10px] tracking-[0.25em] text-white/25 font-light uppercase mb-6">
-          Representation
-        </p>
-        <div className="space-y-6">
-          {contactInfo.representation.map((rep, i) => (
-            <div key={i}>
-              <p className="text-[15px] font-light tracking-wide">{rep.name}</p>
-              <p className="text-[12px] text-white/30 font-light mt-1">{rep.contact}</p>
-              <p className="text-[12px] text-white/20 font-light mt-0.5">{rep.location}</p>
-            </div>
-          ))}
+      {contactInfo.representation.length > 0 && (
+        <div className="mb-16">
+          <p className="text-[10px] tracking-[0.25em] text-white/25 font-light uppercase mb-6">
+            Representation
+          </p>
+          <div className="space-y-6">
+            {contactInfo.representation.map((rep, i) => (
+              <div key={i}>
+                <p className="text-[15px] font-light tracking-wide">{rep.name}</p>
+                <p className="text-[12px] text-white/30 font-light mt-1">{rep.contact}</p>
+                <p className="text-[12px] text-white/20 font-light mt-0.5">{rep.location}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Social */}
       <div>
