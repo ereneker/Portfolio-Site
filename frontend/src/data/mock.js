@@ -54,21 +54,20 @@ export const cvData = {
     { year: "", title: "Mindway VR", role: "Programmer", director: "Mindway Studios" },
     { year: "", title: "Mind & Motion", role: "Programmer", director: "Mindway Studios" },
     { year: "", title: "First Resort", role: "Programmer", director: "Mindway Studios" },
-    { year: "", title: "Occupational Healthy Game", role: "Programmer", director: "" },
   ],
-  awards: [
-    { year: "2019", title: "Cannes Film Festival \u2014 Best Director, Un Certain Regard", film: "Beanpole" },
-    { year: "2019", title: "Camerimage \u2014 Golden Frog Nomination", film: "Beanpole" },
-    { year: "2020", title: "Russian Guild of Cinematographers \u2014 Best Cinematography", film: "Beanpole" },
-    { year: "2023", title: "ASC Spotlight Award", film: "The Last of Us" },
+  personalProjects: [
+    { year: "", title: "Occupational Healthy Game", role: "Developer", director: "" },
   ],
+  awards: [],
   education: [
-    { year: "2017", institution: "VGIK \u2014 Russian State University of Cinematography", degree: "Cinematography" },
+    { year: "2027", institution: "Cologne University of Applied Sciences", degree: "Game Development and Research, MA" },
+    { year: "2022", institution: "Atilim University", degree: "Information System Engineering, BS" },
   ],
 };
 
 export const contactInfo = {
   email: "ereneker5@gmail.com",
+  phone: "+49 178 5626644",
   representation: [],
   social: [
     { platform: "LinkedIn", url: "https://www.linkedin.com/in/ereneker5/" },

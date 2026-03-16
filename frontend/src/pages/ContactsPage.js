@@ -57,6 +57,22 @@ const ContactsPage = () => {
         </div>
       </div>
 
+      {/* Phone */}
+      {contactInfo.phone && (
+        <div className="mb-16">
+          <p className="text-[10px] tracking-[0.25em] text-white/25 font-light uppercase mb-4">
+            Phone
+          </p>
+          <a
+            href={`tel:${contactInfo.phone}`}
+            className="font-display text-xl md:text-3xl lg:text-4xl tracking-[0.02em] hover:opacity-60"
+            style={{ transition: 'opacity 0.3s ease' }}
+          >
+            {contactInfo.phone}
+          </a>
+        </div>
+      )}
+
       {/* Representation */}
       {contactInfo.representation.length > 0 && (
         <div className="mb-16">
