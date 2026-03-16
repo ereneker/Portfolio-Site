@@ -42,7 +42,7 @@ export const projects = [
   {
     id: "occupational-healthy-game",
     year: "",
-    credit: "",
+    credit: "PERSONAL PROJECT",
     title: "OCCUPATIONAL HEALTHY GAME",
     image: "https://customer-assets.emergentagent.com/job_portfolio-showcase-920/artifacts/i9qbotsx_mainpage.PNG",
     category: "Game",
