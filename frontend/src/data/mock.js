@@ -16,12 +16,12 @@ export const navLinks = [
 
 export const projects = [
   {
-    id: "the-last-of-us-s2",
+    id: "mindway-vr",
     year: "2025",
-    credit: "SHOWRUNNER: CRAIG MAZIN",
-    title: "THE LAST OF US S2",
-    image: "https://images.unsplash.com/photo-1751965876151-b5925553e2b8?w=800&q=80",
-    category: "TV Series",
+    credit: "COMPANY: MINDWAY STUDIOS",
+    title: "MINDWAY VR",
+    image: "https://customer-assets.emergentagent.com/job_portfolio-showcase-920/artifacts/b6bw6b8t_mindway-900.png",
+    category: "VR Application",
   },
   {
     id: "rob-peace",
@@ -99,7 +99,7 @@ export const projects = [
 
 export const cvData = {
   selectedWork: [
-    { year: "2025", title: "The Last of Us S2", role: "Director of Photography", director: "Craig Mazin" },
+    { year: "2025", title: "Mindway VR", role: "Programmer", director: "Mindway Studios" },
     { year: "2024", title: "Rob Peace", role: "Director of Photography", director: "Chiwetel Ejiofor" },
     { year: "2023", title: "The Last of Us", role: "Director of Photography", director: "Craig Mazin" },
     { year: "2023", title: "The Crowded Room", role: "Director of Photography", director: "Kornel Mundruczo" },
