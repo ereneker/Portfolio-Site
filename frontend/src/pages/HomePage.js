@@ -45,12 +45,16 @@ const ProjectItem = ({ project, index, onHover, onLeave }) => {
         onMouseLeave={onLeave}
       >
         <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-6">
-          <span className="text-[11px] tracking-[0.15em] text-white/30 font-light shrink-0 md:w-14">
-            {project.year}
-          </span>
-          <span className="text-[10px] tracking-[0.15em] text-white/25 font-light shrink-0 md:w-64 uppercase">
-            {project.credit}
-          </span>
+          {project.year && (
+            <span className="text-[11px] tracking-[0.15em] text-white/30 font-light shrink-0 md:w-14">
+              {project.year}
+            </span>
+          )}
+          {project.credit && (
+            <span className="text-[10px] tracking-[0.15em] text-white/25 font-light shrink-0 md:w-64 uppercase">
+              {project.credit}
+            </span>
+          )}
           <h3 className="font-display text-[1.75rem] md:text-[2.2rem] lg:text-[2.8rem] leading-[1] tracking-[0.02em]">
             <span
               className="inline-block group-hover:opacity-70"
