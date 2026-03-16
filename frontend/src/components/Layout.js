@@ -55,7 +55,7 @@ const Layout = ({ children }) => {
             className="font-display text-sm md:text-base tracking-[0.3em] uppercase hover:opacity-60"
             style={{ transition: 'opacity 0.3s ease' }}
           >
-            {siteInfo.name}
+            HOME
           </Link>
 
           {/* Desktop Navigation */}

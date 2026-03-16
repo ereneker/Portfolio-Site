@@ -40,6 +40,14 @@ export const projects = [
     category: "VR Application",
   },
   {
+    id: "mia-workaria",
+    year: "",
+    credit: "COMPANY: MIA TECH",
+    title: "MIA - WORKARIA",
+    image: "https://customer-assets.emergentagent.com/job_portfolio-showcase-920/artifacts/ht6whne0_-_-.png",
+    category: "Application",
+  },
+  {
     id: "occupational-healthy-game",
     year: "",
     credit: "PERSONAL PROJECT",
@@ -54,6 +62,7 @@ export const cvData = {
     { year: "", title: "Mindway VR", role: "Programmer", director: "Mindway Studios" },
     { year: "", title: "Mind & Motion", role: "Programmer", director: "Mindway Studios" },
     { year: "", title: "First Resort", role: "Programmer", director: "Mindway Studios" },
+    { year: "", title: "MIA - Workaria", role: "Programmer", director: "MIA Tech" },
   ],
   personalProjects: [
     { year: "", title: "Occupational Healthy Game", role: "Developer", director: "" },
