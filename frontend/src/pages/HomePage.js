@@ -120,7 +120,19 @@ const HomePage = () => {
     <div>
       {/* ========== HERO SECTION ========== */}
       <section className="h-screen flex flex-col justify-center px-6 md:px-12 lg:px-16 relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://customer-assets.emergentagent.com/job_portfolio-showcase-920/artifacts/4vuwp2z6_DSCF0057.JPG"
+            alt=""
+            className="w-full h-full object-cover"
+            style={{ filter: 'brightness(0.35) contrast(1.1)' }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20" />
+        </div>
+
         <div
+          className="relative z-10"
           style={{
             opacity: isLoaded ? 1 : 0,
             transform: `translateY(${isLoaded ? 0 : 40}px)`,
@@ -137,6 +149,7 @@ const HomePage = () => {
         </div>
 
         <div
+          className="relative z-10"
           style={{
             opacity: isLoaded ? 1 : 0,
             transform: `translateY(${isLoaded ? 0 : 20}px)`,
