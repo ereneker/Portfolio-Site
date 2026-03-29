@@ -4,6 +4,7 @@
 export const siteInfo = {
   name: "EREN EKER",
   title: "PROGRAMMER",
+  bio: "Game design student with a programming background, recently expanding into sound design.",
   email: "ereneker5@gmail.com",
   copyright: "\u00a9 2025 EE",
 };

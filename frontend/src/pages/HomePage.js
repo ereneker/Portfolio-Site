@@ -159,6 +159,11 @@ const HomePage = () => {
           <p className="mt-6 md:mt-8 text-[11px] md:text-[13px] tracking-[0.5em] font-light text-white/40 uppercase">
             {siteInfo.title}
           </p>
+          {siteInfo.bio && (
+          <p className="mt-4 text-sm md:text-base text-white/70 max-w-xl">
+            {siteInfo.bio}
+          </p>
+          )}
         </div>
 
         {/* Scroll indicator */}
