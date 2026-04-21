@@ -1,12 +1,14 @@
 // Mock data for the cinematographer portfolio
 // All data is mock and will be replaced with backend API calls
+import dontPlayThePianoImg from '../assets/dont-play-the-piano.png';
+import mansBestFreundeImg from '../assets/mans-best-freunde.png';
 
 export const siteInfo = {
   name: "EREN EKER",
-  title: "PROGRAMMER",
+  title: "TECHNICAL GAME DESIGNER",
   bio: "Game design student with a programming background, recently expanding into sound design.",
   email: "ereneker5@gmail.com",
-  copyright: "\u00a9 2025 EE",
+  copyright: "\u00a9 2026 EE",
 };
 
 export const navLinks = [
@@ -56,6 +58,18 @@ export const projects = [
     image: "https://customer-assets.emergentagent.com/job_portfolio-showcase-920/artifacts/i9qbotsx_mainpage.PNG",
     category: "Game",
   },
+  {
+    id: "dont-play-the-piano",
+    credit: "Personal Project",
+    title: "Don't Play The Piano",
+    image: dontPlayThePianoImg,
+  },
+  {
+    id: "mans-best-freunde",
+    credit: "CGL Game Jam 2025",
+    title: "Mans Best Freunde",
+    image: mansBestFreundeImg,
+  }
 ];
 
 export const cvData = {

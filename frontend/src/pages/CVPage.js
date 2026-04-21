@@ -17,6 +17,23 @@ const CVPage = () => {
         transition: 'opacity 0.8s ease',
       }}
     >
+      {/* CV Header */}
+      <section className="mb-20">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <h1 className="text-[10px] tracking-[0.35em] text-white/25 font-light uppercase">
+            Curriculum Vitae
+          </h1>
+
+          <a
+            href="/Eren_Eker_CV.pdf"
+            download
+            className="inline-flex items-center justify-center border border-white/20 px-4 py-2 text-[11px] tracking-[0.2em] uppercase text-white/80 hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            Download CV
+          </a>
+        </div>
+      </section>
+
       {/* Experience */}
       <section className="mb-20">
         <h2 className="text-[10px] tracking-[0.35em] text-white/25 font-light uppercase mb-10">

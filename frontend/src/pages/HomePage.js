@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { projects, siteInfo } from '@/data/mock';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, X } from 'lucide-react';
 
 /* Scroll-triggered visibility hook */
 const useInView = () => {
@@ -26,8 +26,7 @@ const useInView = () => {
   return [ref, isVisible];
 };
 
-/* Individual project row with scroll animation */
-const ProjectItem = ({ project, index, onHover, onLeave }) => {
+const ProjectItem = ({ project, index, onHover, onLeave, onClick }) => {
   const [ref, isVisible] = useInView();
 
   return (
@@ -39,10 +38,12 @@ const ProjectItem = ({ project, index, onHover, onLeave }) => {
         transition: `opacity 0.7s ease ${index * 0.06}s, transform 0.7s ease ${index * 0.06}s`,
       }}
     >
-      <div
-        className="group border-t border-white/[0.08] py-5 md:py-7 cursor-pointer"
+      <button
+        type="button"
+        className="group w-full text-left border-t border-white/[0.08] py-5 md:py-7 cursor-pointer bg-transparent"
         onMouseEnter={() => onHover(project)}
         onMouseLeave={onLeave}
+        onClick={() => onClick(project)}
       >
         <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-6">
           {project.year && (
@@ -64,6 +65,106 @@ const ProjectItem = ({ project, index, onHover, onLeave }) => {
             </span>
           </h3>
         </div>
+      </button>
+    </div>
+  );
+};
+
+const ProjectModal = ({ project, onClose }) => {
+  useEffect(() => {
+  const handleKeyDown = (e) => {
+    if (e.key === 'Escape') onClose();
+  };
+
+  document.addEventListener('keydown', handleKeyDown);
+
+  return () => {
+    document.removeEventListener('keydown', handleKeyDown);
+  };
+}, [onClose]);
+
+  if (!project) return null;
+
+  return (
+    <div
+      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center px-6"
+      onClick={onClose}
+    >
+      <div
+        className="relative w-full max-w-3xl bg-[#111] border border-white/10 p-6 md:p-10 max-h-[90vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          type="button"
+          onClick={onClose}
+          className="absolute top-4 right-4 text-white/50 hover:text-white transition-colors"
+          aria-label="Close project details"
+        >
+          <X size={22} strokeWidth={1.5} />
+        </button>
+
+        <div className="mb-6">
+          {project.year && (
+            <p className="text-[11px] tracking-[0.18em] uppercase text-white/35 mb-3">
+              {project.year}
+            </p>
+          )}
+          <h2 className="font-display text-3xl md:text-5xl leading-none mb-3">
+            {project.title}
+          </h2>
+          {project.credit && (
+            <p className="text-[11px] tracking-[0.18em] uppercase text-white/35">
+              {project.credit}
+            </p>
+          )}
+        </div>
+
+        {project.image && (
+          <div className="mb-8 overflow-hidden">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        )}
+
+        {project.description && (
+          <p className="text-sm md:text-base text-white/75 leading-7 mb-6 max-w-2xl">
+            {project.description}
+          </p>
+        )}
+
+        {project.details?.length > 0 && (
+          <div className="mb-6">
+            <h3 className="text-[10px] tracking-[0.3em] uppercase text-white/30 mb-4">
+              Details
+            </h3>
+            <ul className="space-y-3 text-sm md:text-base text-white/70">
+              {project.details.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {project.tools?.length > 0 && (
+          <div>
+            <h3 className="text-[10px] tracking-[0.3em] uppercase text-white/30 mb-4">
+              Tools
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {project.tools.map((tool, index) => (
+                <span
+                  key={index}
+                  className="border border-white/15 px-3 py-1 text-[11px] tracking-[0.12em] uppercase text-white/65"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -74,6 +175,7 @@ const HomePage = () => {
   const [displayImage, setDisplayImage] = useState(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [isLoaded, setIsLoaded] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
   const workRef = useRef(null);
 
   useEffect(() => {
@@ -81,11 +183,12 @@ const HomePage = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  /* Preload project images */
   useEffect(() => {
     projects.forEach((project) => {
-      const img = new Image();
-      img.src = project.image;
+      if (project.image) {
+        const img = new Image();
+        img.src = project.image;
+      }
     });
   }, []);
 
@@ -102,15 +205,23 @@ const HomePage = () => {
     setHoveredProject(null);
   }, []);
 
+  const handleProjectClick = useCallback((project) => {
+    setSelectedProject(project);
+  }, []);
+
+  const handleCloseModal = useCallback(() => {
+    setSelectedProject(null);
+  }, []);
+
   const scrollToWork = () => {
     workRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  /* Position image on opposite side of cursor to avoid overlap */
   const imageLeft =
     mousePos.x > (typeof window !== 'undefined' ? window.innerWidth * 0.6 : 800)
       ? mousePos.x - 390
       : mousePos.x + 30;
+
   const imageTop = Math.max(
     20,
     Math.min(mousePos.y - 130, (typeof window !== 'undefined' ? window.innerHeight : 800) - 280)
@@ -118,9 +229,7 @@ const HomePage = () => {
 
   return (
     <div>
-      {/* ========== HERO SECTION ========== */}
       <section className="h-screen flex flex-col justify-center px-6 md:px-12 lg:px-16 relative overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
             src="https://customer-assets.emergentagent.com/job_portfolio-showcase-920/artifacts/4vuwp2z6_DSCF0057.JPG"
@@ -160,13 +269,12 @@ const HomePage = () => {
             {siteInfo.title}
           </p>
           {siteInfo.bio && (
-          <p className="mt-4 text-sm md:text-base text-white/70 max-w-xl">
-            {siteInfo.bio}
-          </p>
+            <p className="mt-4 text-sm md:text-base text-white/70 max-w-xl">
+              {siteInfo.bio}
+            </p>
           )}
         </div>
 
-        {/* Scroll indicator */}
         <button
           onClick={scrollToWork}
           className="absolute bottom-10 left-1/2 text-white/20 cursor-pointer bg-transparent border-none"
@@ -181,7 +289,6 @@ const HomePage = () => {
         </button>
       </section>
 
-      {/* ========== WORK SECTION ========== */}
       <section
         id="work"
         ref={workRef}
@@ -202,12 +309,12 @@ const HomePage = () => {
               index={index}
               onHover={handleHover}
               onLeave={handleLeave}
+              onClick={handleProjectClick}
             />
           ))}
           <div className="border-t border-white/[0.08]" />
         </div>
 
-        {/* Cursor-following hover image */}
         <div
           className="fixed pointer-events-none z-30 overflow-hidden hidden md:block"
           style={{
@@ -215,8 +322,8 @@ const HomePage = () => {
             top: imageTop,
             width: '360px',
             height: '240px',
-            opacity: hoveredProject ? 1 : 0,
-            clipPath: hoveredProject ? 'inset(0 0 0 0)' : 'inset(40% 0 40% 0)',
+            opacity: hoveredProject && !selectedProject ? 1 : 0,
+            clipPath: hoveredProject && !selectedProject ? 'inset(0 0 0 0)' : 'inset(40% 0 40% 0)',
             transition: 'opacity 0.3s ease, clip-path 0.35s cubic-bezier(0.77, 0, 0.175, 1)',
             willChange: 'clip-path, opacity',
           }}
@@ -231,6 +338,8 @@ const HomePage = () => {
           )}
         </div>
       </section>
+
+      <ProjectModal project={selectedProject} onClose={handleCloseModal} />
     </div>
   );
 };
