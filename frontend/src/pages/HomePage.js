@@ -121,7 +121,7 @@ const ProjectModal = ({ project, onClose }) => {
 
         {project.image && (
           <div className="mb-8 overflow-hidden">
-            {project.link ? (
+            {project.link && (
               <a
                 href={project.link}
                 target="_blank"

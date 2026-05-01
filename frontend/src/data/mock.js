@@ -2,6 +2,7 @@
 // All data is mock and will be replaced with backend API calls
 import dontPlayThePianoImg from '../assets/dont-play-the-piano.png';
 import mansBestFreundeImg from '../assets/mans-best-freunde.png';
+import anotherRoundImg from '../assets/another-round.png';
 
 export const siteInfo = {
   name: "EREN EKER",
@@ -70,6 +71,13 @@ export const projects = [
     credit: "CGL Game Jam 2025",
     title: "Mans Best Freunde",
     image: mansBestFreundeImg,
+  },
+  {
+    id: "Another Round - Dance Scene Remake On Unreal Engine 5",
+    credit: "Personal Project",
+    title: "Another Round - Dance Scene Remake On Unreal Engine 5",
+    image: "anotherRoundImg,",
+    link: "https://drive.google.com/file/d/1ljk2_xJCteA5LXsZS1zuI2WiTNkwoSRH/view",
   }
 ];
 
