@@ -73,10 +73,10 @@ export const projects = [
     image: mansBestFreundeImg,
   },
   {
-    id: "Another Round - Dance Scene Remake On Unreal Engine 5",
+    id: "Another-Round-Dance-Scene-Remake-On-Unreal-Engine-5",
     credit: "Personal Project",
     title: "Another Round - Dance Scene Remake On Unreal Engine 5",
-    image: "anotherRoundImg,",
+    image: anotherRoundImg,
     link: "https://drive.google.com/file/d/1ljk2_xJCteA5LXsZS1zuI2WiTNkwoSRH/view",
   }
 ];
