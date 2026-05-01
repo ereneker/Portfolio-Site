@@ -71,6 +71,7 @@ export const projects = [
     credit: "CGL Game Jam 2025",
     title: "Mans Best Freunde",
     image: mansBestFreundeImg,
+    link: "https://binsprout.itch.io/mans-beste-freunde",
   },
   {
     id: "Another-Round-Dance-Scene-Remake-On-Unreal-Engine-5",
