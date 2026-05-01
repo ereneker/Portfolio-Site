@@ -121,11 +121,26 @@ const ProjectModal = ({ project, onClose }) => {
 
         {project.image && (
           <div className="mb-8 overflow-hidden">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-auto object-cover"
-            />
+            {project.link ? (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-auto object-cover"
+                />
+              </a>
+            ) : (
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-auto object-cover"
+              />
+            )}
           </div>
         )}
 

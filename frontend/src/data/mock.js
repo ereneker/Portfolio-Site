@@ -63,6 +63,7 @@ export const projects = [
     credit: "Personal Project",
     title: "Don't Play The Piano",
     image: dontPlayThePianoImg,
+    link: "https://ereneker.itch.io/dont-play-the-piano",
   },
   {
     id: "mans-best-freunde",
