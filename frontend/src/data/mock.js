@@ -107,5 +107,6 @@ export const contactInfo = {
     { platform: "LinkedIn", url: "https://www.linkedin.com/in/ereneker5/" },
     { platform: "GitHub", url: "https://github.com/ereneker" },
     { platform: "itch.io", url: "https://ereneker.itch.io/" },
+    { platform: "SoundCloud", url: "https://soundcloud.com/eren-eker" },
   ],
 };
