@@ -288,6 +288,12 @@ const HomePage = () => {
               {siteInfo.bio}
             </p>
           )}
+
+          {siteInfo.location && (
+            <p className="mt-3 text-[11px] md:text-[12px] tracking-[0.2em] uppercase text-white/40">
+              {siteInfo.location}
+            </p>
+          )}
         </div>
 
         <button

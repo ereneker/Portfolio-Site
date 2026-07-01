@@ -8,6 +8,7 @@ export const siteInfo = {
   name: "EREN EKER",
   title: "TECHNICAL GAME DESIGNER",
   bio: "Game design student with a programming background, recently expanding into sound design.",
+  location: "Cologne, Germany",
   email: "ereneker5@gmail.com",
   copyright: "\u00a9 2026 EE",
 };
