@@ -119,6 +119,13 @@ const ProjectModal = ({ project, onClose }) => {
           )}
         </div>
 
+        {/* Project description */}
+          {project.description && (
+            <p className="text-sm md:text-base text-white/70 leading-7 mb-8 max-w-2xl">
+          {project.description}
+            </p>
+          )}
+
         {project.image && (
           <div className="mb-8 overflow-hidden">
             {project.link ? (

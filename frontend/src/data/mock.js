@@ -79,6 +79,7 @@ export const projects = [
     credit: "Personal Project",
     title: "Another Round - Dance Scene Remake On Unreal Engine 5",
     image: anotherRoundImg,
+    description: "This project is a remake of the dance scene from the movie 'Another Round' using Unreal Engine 5. The goal was to recreate the scene with realistic lighting, animations, and sound design.",
     link: "https://drive.google.com/file/d/1ljk2_xJCteA5LXsZS1zuI2WiTNkwoSRH/view",
   }
 ];
