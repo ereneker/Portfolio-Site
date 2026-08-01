@@ -127,35 +127,39 @@ const ProjectModal = ({ project, onClose }) => {
           )}
 
         {project.image && (
-          <div className="mb-8 overflow-hidden">
-            {project.link ? (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-auto object-cover"
-                />
-              </a>
-            ) : (
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-auto object-cover"
-              />
-            )}
-          </div>
-        )}
+  <div className="mb-8 overflow-hidden">
+    {project.link ? (
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="relative block group overflow-hidden"
+        aria-label={`Open ${project.title}`}
+      >
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-auto object-cover cursor-pointer transition-transform duration-500 group-hover:scale-[1.03]"
+        />
 
-        {project.description && (
-          <p className="text-sm md:text-base text-white/75 leading-7 mb-6 max-w-2xl">
-            {project.description}
-          </p>
-        )}
+        {/* Hover overlay */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/35 transition-colors duration-300" />
+
+        {/* Click indicator */}
+        <div className="absolute bottom-4 right-4 border border-white/30 bg-black/50 backdrop-blur-sm px-3 py-2 text-[10px] tracking-[0.18em] uppercase text-white/80 opacity-80 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+          View Project ↗
+        </div>
+      </a>
+    ) : (
+      <img
+        src={project.image}
+        alt={project.title}
+        className="w-full h-auto object-cover"
+      />
+    )}
+  </div>
+)}
+
 
         {project.details?.length > 0 && (
           <div className="mb-6">
