@@ -261,9 +261,9 @@ const HomePage = () => {
             src="https://customer-assets.emergentagent.com/job_portfolio-showcase-920/artifacts/4vuwp2z6_DSCF0057.JPG"
             alt=""
             className="w-full h-full object-cover"
-            style={{ filter: 'brightness(0.35) contrast(1.1)' }}
+            style={{ filter: 'brightness(0.5) contrast(1.05)' }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/10" />
         </div>
 
         <div
