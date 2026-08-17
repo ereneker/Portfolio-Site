@@ -72,6 +72,7 @@ export const projects = [
     credit: "CGL Game Jam 2025",
     title: "Mans Best Freunde",
     image: mansBestFreundeImg,
+    description: "Mans Beste Freunde is a game made in 4 days for the CGL Mini-Jam 2026 from 23-26 March. It is a 'cosy game' where you play as Sneep and try to be the best companion. (which is the theme for the jam). However, it seems that your owner might not be in the clearest of mind and its up to you to help him! I worked as composer & audio designer/programmer.",
     link: "https://binsprout.itch.io/mans-beste-freunde",
   },
   {
@@ -79,8 +80,8 @@ export const projects = [
     credit: "Personal Project",
     title: "Another Round - Dance Scene Remake On Unreal Engine 5",
     image: anotherRoundImg,
-    description: "This project is a remake of the dance scene from the movie 'Another Round' using Unreal Engine 5. The goal was to recreate the scene with realistic lighting, animations, and sound design.",
-    link: "https://drive.google.com/file/d/1ljk2_xJCteA5LXsZS1zuI2WiTNkwoSRH/view",
+    description: "This project is a remake of the dance scene from the movie 'Another Round' using Unreal Engine 5. The goal was to recreate the scene with realistic lighting, animations, and sound design. My focus on the project was to set-up cameras & editing sounds. I created my own version with camera angles while staying true to original source.",
+    link: "https://www.youtube.com/watch?v=cOdDak1SV5U&list=PPSV",
   }
 ];
 
