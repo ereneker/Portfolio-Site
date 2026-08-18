@@ -118,33 +118,15 @@ export const contactInfo = {
 export const blogPosts = [
   {
     id: 1,
-    slug: "building-dont-play-the-piano",
-    title: "Building Don't Play The Piano",
+    slug: "my-gibberish-starts-here",
+    title: "First Blog Post: My Gibberish Starts Here",
     date: "2026-08-18",
-    category: "Project Update",
+    category: "Updates",
     excerpt:
-      "A short development update on Don't Play The Piano and what I learned while building its interaction systems.",
-    image: "/images/blog/dont-play-the-piano.jpg",
+      "As I hardly can explain myself. I'm starting this blog to share my thoughts, ideas, and projects. I hope you enjoy it. If anyone reading anyway.",
+    image: "",
     content: [
-      "Don't Play The Piano started as an experiment around player expectation and interaction.",
-      "One of the things I wanted to explore was how a very simple instruction could create tension when the environment keeps encouraging the player to break it.",
-      "During development, I also started thinking more about how sound can communicate consequences before anything visibly changes in the environment."
-    ],
-  },
-
-  {
-    id: 2,
-    slug: "what-inscryption-taught-me-about-card-design",
-    title: "What Inscryption Taught Me About Card Design",
-    date: "2026-08-10",
-    category: "Games",
-    excerpt:
-      "Some thoughts on how Inscryption makes physical interaction, presentation and card mechanics feel inseparable.",
-    image: "/images/blog/inscryption.jpg",
-    content: [
-      "One of the things I find interesting about Inscryption is that the cards never feel disconnected from the space around them.",
-      "The table, animations and physical presentation all reinforce the mechanics.",
-      "It made me think differently about how I want cards to behave in my own projects."
+      
     ],
   },
 ];
