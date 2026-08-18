@@ -5,6 +5,9 @@ import Layout from "@/components/Layout";
 import HomePage from "@/pages/HomePage";
 import CVPage from "@/pages/CVPage";
 import ContactsPage from "@/pages/ContactsPage";
+import HomePage from './pages/HomePage';
+import CVPage from './pages/CVPage';
+import ContactsPage from './pages/ContactsPage';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/cv" element={<CVPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
+          
         </Routes>
       </Layout>
     </BrowserRouter>
