@@ -36,7 +36,7 @@ const CVPage = () => {
 
       {/* Experience */}
       <section className="mb-20">
-        <h2 className="text-[10px] tracking-[0.35em] text-white/25 font-light uppercase mb-10">
+        <h2 className="text-sm tracking-[0.35em] text-white/75 font-light uppercase mb-10">
           Experience
         </h2>
         <div>
@@ -51,14 +51,14 @@ const CVPage = () => {
               }}
             >
               {work.year && (
-                <span className="text-[11px] text-white/30 font-light shrink-0 w-12">
+                <span className="text-smhttps://visit.link.me/lilkarina?profileLinkId=976908&utm_source=twitter text-white/60 font-light shrink-0 w-12">
                   {work.year}
                 </span>
               )}
-              <span className="font-display text-lg md:text-xl tracking-[0.02em] shrink-0 md:w-64">
+              <span className="font-display text-2xl md:text-3xl tracking-[0.02em] shrink-0 md:w-64">
                 {work.title}
               </span>
-              <span className="text-[11px] text-white/20 font-light hidden md:block ml-auto">
+              <span className="text-base text-white/70 font-light hidden md:block ml-auto">
                 {work.role}
               </span>
               {work.director && (
@@ -80,7 +80,7 @@ const CVPage = () => {
           {cvData.personalProjects.map((project, i) => (
             <div
               key={i}
-              className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-6 border-t border-white/[0.06] py-4"
+              className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-6 border-t border-white/20 py-7 md:py-9"
             >
               {project.year && (
                 <span className="text-[11px] text-white/30 font-light shrink-0 w-12">
