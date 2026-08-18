@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
       <header
         className="fixed top-0 left-0 right-0 z-50"
         style={{
-          backgroundColor: scrolled ? 'rgba(0,0,0,0.92)' : 'transparent',
+          backgroundColor: scrolled ? 'rgba(1,1,1,1)' : 'transparent',
           backdropFilter: scrolled ? 'blur(10px)' : 'none',
           transition: 'background-color 0.5s ease, backdrop-filter 0.5s ease',
         }}
