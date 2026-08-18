@@ -32,7 +32,9 @@ const BlogPage = () => {
 
       {/* Posts */}
       <section>
-        {blogPosts.map((post) => (
+        {[...blogPosts]
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .map((post) => (
           <Link
             key={post.id}
             to={`/blog/${post.slug}`}
