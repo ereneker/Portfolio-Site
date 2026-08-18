@@ -5,9 +5,8 @@ import Layout from "@/components/Layout";
 import HomePage from "@/pages/HomePage";
 import CVPage from "@/pages/CVPage";
 import ContactsPage from "@/pages/ContactsPage";
-import HomePage from './pages/HomePage';
-import CVPage from './pages/CVPage';
-import ContactsPage from './pages/ContactsPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 
 function App() {
   return (
@@ -19,7 +18,7 @@ function App() {
           <Route path="/contacts" element={<ContactsPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPostPage />} />
-          
+
         </Routes>
       </Layout>
     </BrowserRouter>
