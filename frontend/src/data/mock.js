@@ -126,7 +126,8 @@ export const blogPosts = [
       "As I hardly can explain myself. I'm starting this blog to share my thoughts, ideas, and projects. I hope you enjoy it. If anyone reading anyway.",
     image: "",
     content: [
-      
+      "I have decided to start this blog. I have been thinking about it for a while, and finally decided to do it. I want to share my thoughts, ideas, and projects with the world (or just myself, fuck it.) I don't know how often I will do this. Probably whenever I have too much thought in my head and need to get it out.",
+      "For today's thoughts, it's killing me that my website looks terrible with black-and-white colors. I want to make it look better, but I don't know how. Too lazy to think about it. Maybe one day. For now, I just want to keep playing Mortal Shell 2.",
     ],
   },
 ];
