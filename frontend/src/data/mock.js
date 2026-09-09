@@ -3,8 +3,8 @@
 import dontPlayThePianoImg from '../assets/dont-play-the-piano.png';
 import mansBestFreundeImg from '../assets/mans-best-freunde.png';
 import anotherRoundImg from '../assets/another-round.png';
-import controlImg from '../assets/control-booth.png';
-import arcRaidersImg from '../assets/arc-raiders.png';
+import controlImg from '../assets/control-booth.jpeg';
+import arcRaidersImg from '../assets/arc-raiders.jpeg';
 
 export const siteInfo = {
   name: "EREN EKER",
