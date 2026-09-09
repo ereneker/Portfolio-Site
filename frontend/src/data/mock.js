@@ -3,6 +3,8 @@
 import dontPlayThePianoImg from '../assets/dont-play-the-piano.png';
 import mansBestFreundeImg from '../assets/mans-best-freunde.png';
 import anotherRoundImg from '../assets/another-round.png';
+import controlImg from '../assets/control-booth.png';
+import arcRaidersImg from '../assets/arc-raiders.png';
 
 export const siteInfo = {
   name: "EREN EKER",
@@ -130,4 +132,22 @@ export const blogPosts = [
       "For today's thoughts, it's killing me that my website looks terrible with black-and-white colors. I want to make it look better, but I don't know how. Too lazy to think about it. Maybe one day. For now, I just want to keep playing Mortal Shell 2.",
     ],
   },
+
+  {
+    id: 2,
+    slug: "my-gibberish-continues-here",
+    title: "Surviving Gamescom & Enjoying Depression",
+    date: "2026-08-19",
+    category: "Updates",
+    excerpt:
+      "I already took a break after my first blog post. Consistency is key of course and this is me.",
+    image: "",
+    content: [
+      { type: "paragraph", text: "If you are reading this, know that I've been drifted in void for the last two weeks. It's cold in 30 degrees Celsius. I'm wondering if it would feel hot in -5 Celsius. At least that's the feeling when I got stuck in the creative process of the game I'm working on. I have been working on it for a while, but since the moment I have to create something visual, I feel like I'm making no process at all." },
+      { type: "paragraph", text: "I actually had the best time two weeks ago. I went to Gamescom for the first time in my life. First two days was working at Gamescom Dev. Then I had the chance to visit Gamescom (for free, damn). From the moment I entered the hall, energy changed drastically. At first I was just trying to play some games, then it turned to just finding the best freebies. (<span className="text-sm">I saw the new Witcher 3 DLC. I thought I wouldn't care but actually loved it!</span>) " },
+      { type: "image", src: controlImg, alt: "Gamescom 2026", caption: "Gamescom 2026" },
+      { type: "paragraph", text: "Of course I couldn't try Control Resonant. Since that's the only game I'm dying to play, why would I? " },
+      { type: "paragraph", text: "After a week packed with games and trying to make connections with publishers, that void was inevitable. So I filled it with the game I'm working on. I think it only made it bigger though. I have so many ideas with no talent on creating the visuals whatsoever. I think I'll just go back to Mubi and watch anything. "}
+    ],
+  }
 ];

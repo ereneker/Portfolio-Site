@@ -65,15 +65,63 @@ const BlogPostPage = () => {
 
       {/* Article */}
       <div className="max-w-3xl">
-        {post.content.map((paragraph, index) => (
-          <p
-            key={index}
-            className="text-base md:text-lg leading-8 text-white/75 mb-7"
-          >
-            {paragraph}
-          </p>
-        ))}
-      </div>
+  {post.content.map((block, index) => {
+    if (block.type === "paragraph") {
+      return (
+        <p
+          key={index}
+          className="text-base md:text-lg leading-8 text-white/75 mb-8"
+        >
+          {block.text}
+        </p>
+      );
+    }
+
+    if (block.type === "image") {
+      return (
+        <figure key={index} className="my-12">
+          <img
+            src={block.src}
+            alt={block.alt || ""}
+            className="w-full h-auto object-cover"
+          />
+
+          {block.caption && (
+            <figcaption className="mt-3 text-xs text-white/40">
+              {block.caption}
+            </figcaption>
+          )}
+        </figure>
+      );
+    }
+
+    if (block.type === "video") {
+      return (
+        <div key={index} className="my-12">
+          <video
+            src={block.src}
+            controls
+            playsInline
+            className="w-full h-auto"
+          />
+        </div>
+      );
+    }
+
+    if (block.type === "heading") {
+      return (
+        <h2
+          key={index}
+          className="font-display text-2xl md:text-3xl mt-14 mb-6"
+        >
+          {block.text}
+        </h2>
+      );
+    }
+
+    return null;
+  })}
+</div>
 
     </article>
   );
