@@ -137,7 +137,7 @@ export const blogPosts = [
     id: 2,
     slug: "my-gibberish-continues-here",
     title: "Surviving Gamescom & Enjoying Depression",
-    date: "2026-08-19",
+    date: "2026-09-06",
     category: "Updates",
     excerpt:
       "I already took a break after my first blog post. Consistency is key of course and this is me.",
