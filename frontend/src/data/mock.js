@@ -6,6 +6,7 @@ import anotherRoundImg from '../assets/another-round.png';
 import controlImg from '../assets/control-booth.jpeg';
 import arcRaidersImg from '../assets/arc-raiders.jpeg';
 import sadOImg from '../assets/sad-o.jpeg';
+import modularSynthImg from '../assets/modular-synth.png';
 
 export const siteInfo = {
   name: "EREN EKER",
@@ -136,7 +137,7 @@ export const blogPosts = [
 
   {
     id: 2,
-    slug: "my-gibberish-continues-here",
+    slug: "surviving-gamescom-enjoying-depression",
     title: "Surviving Gamescom & Enjoying Depression",
     date: "2026-09-06",
     category: "Updates",
@@ -156,5 +157,21 @@ export const blogPosts = [
       { type: "paragraph", text: "After a week packed with games and trying to make connections with publishers, that void was inevitable. So I filled it with the game I'm working on. I think it only made it bigger though. I have so many ideas with no talent on creating the visuals whatsoever. I think I'll just go back to Mubi and watch anything. "}
     ],
   },
+
+  {
+    id: 3,
+    slug: "my-learning-journey-of-modular-synthesizer",
+    title: "Me, Myself & Modular Synthesizer",
+    date: "2026-09-10",
+    category: "Updates",
+    excerpt: "I was just thinking, what to do to trouble myself more? So I decided to start learning modular synthesizer. It's hell of a journey.",
+    image: "",
+    content: [
+      { type: "paragraph", text: "So I won't explain my game too much, but it heavily relies on the music. Player, in a way, makes music. The things you can do with modular synth is endless. It suits so well with my ideas. I'm already into music and know couple instruments. So how hard can it be? " },
+      { type: "image", src: modularSynthImg, alt: "Modular Synthesizer", caption: "Modular Synthesizer" },
+      { type: "paragraph", text: "It can be pretty hard. Pretty, pretty hard. This process is after 1 hour watching tutorials and learning all about *only the popular* modules. In the end, I actually love the output. Though it's not even close to what I want. I must say, this one already feels so 'Nangs' and I love it. Would Kevin Parker be proud? No. Do I care? Not yet." },
+      { type: "paragraph", text: "What really interesting is that there's only a current coming out of oscillator and that's the sound you get. It only takes creativity to make something sounds beautiful. No need to know any chord or anything. Pure creativity. I've read the book 'Catching the Big Fish' by David Lynch so many times. I keep thinking this is the big fish I'm looking for now. I just need to deep dive. All the beauty that the ocean hides are lying there."}
+    ]
+  }
 ]
 
