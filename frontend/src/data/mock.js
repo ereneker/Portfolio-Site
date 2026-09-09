@@ -5,6 +5,7 @@ import mansBestFreundeImg from '../assets/mans-best-freunde.png';
 import anotherRoundImg from '../assets/another-round.png';
 import controlImg from '../assets/control-booth.jpeg';
 import arcRaidersImg from '../assets/arc-raiders.jpeg';
+import sadOImg from '../assets/sad-o.jpeg';
 
 export const siteInfo = {
   name: "EREN EKER",
@@ -146,10 +147,12 @@ export const blogPosts = [
       { type: "paragraph", text: "If you are reading this, know that I've been drifted in void for the last two weeks. It's cold in 30 degrees Celsius. I'm wondering if it would feel hot in -5 Celsius. At least that's the feeling when I got stuck in the creative process of the game I'm working on. I have been working on it for a while, but since the moment I have to create something visual, I feel like I'm making no process at all." },
       {
         type: "paragraph",
-        text: "I actually had the best time two weeks ago. I went to Gamescom for the first time in my life. First two days was working at Gamescom Dev. Then I had the chance to visit Gamescom (for free, damn). From the moment I entered the hall, energy changed drastically. At first I was just trying to play some games, then it turned to just finding the best freebies. <small style>I saw the new Witcher 3 DLC. I thought I wouldn't care but actually loved it!</small>  ",
+        text: "I actually had the best time two weeks ago. I went to Gamescom for the first time in my life. First two days was working at Gamescom Dev. Then I had the chance to visit Gamescom (for free, damn). From the moment I entered the hall, energy changed drastically. At first I was just trying to play some games, then it turned to just finding the best freebies. I saw the new Witcher 3 DLC. I thought I wouldn't care but actually loved it! (Not that I just love free t-shirt and the bag)",
       },
       { type: "image", src: controlImg, alt: "Gamescom 2026", caption: "Gamescom 2026" },
       { type: "paragraph", text: "Of course I couldn't try Control Resonant. Since that's the only game I'm dying to play, why would I? " },
+      { type: "image", src: sadOImg, alt: "Sad O", caption: "Sad O" },
+      { type: "paragraph", text: "This is my final day at Gamescom. Just looking at that letter 'O' shape and think how sad it looks. I can understand how tired it is. Being have to watch all those biz guys running around, vape and do the fake business talks sounds terrific. I know that I'll have to do that too. "},
       { type: "paragraph", text: "After a week packed with games and trying to make connections with publishers, that void was inevitable. So I filled it with the game I'm working on. I think it only made it bigger though. I have so many ideas with no talent on creating the visuals whatsoever. I think I'll just go back to Mubi and watch anything. "}
     ],
   },
