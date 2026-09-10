@@ -21,7 +21,7 @@ export const navLinks = [
   { label: "WORK", path: "/#work" },
   { label: "CV", path: "/cv" },
   { label: "CONTACTS", path: "/contacts" },
-  {label: "BLOG", path: "/blog"},
+  { label: "BLOG", path: "/blog"},
 ];
 
 export const projects = [
@@ -168,7 +168,7 @@ export const blogPosts = [
     image: "",
     content: [
       { type: "paragraph", text: "So I won't explain my game too much, but it heavily relies on the music. Player, in a way, makes music. The things you can do with modular synth is endless. It suits so well with my ideas. I'm already into music and know couple instruments. So how hard can it be? " },
-      { type: "image", src: modularSynthImg, alt: "Modular Synthesizer", caption: "Modular Synthesizer" },
+      { type: "image", src: modularSynthImg, alt: "Cardinal - Modular Synthesizer Plugin", caption: "Cardinal - Modular Synthesizer Plugin" },
       { type: "paragraph", text: "It can be pretty hard. Pretty, pretty hard. This process is after 1 hour watching tutorials and learning all about *only the popular* modules. In the end, I actually love the output. Though it's not even close to what I want. I must say, this one already feels so 'Nangs' and I love it. Would Kevin Parker be proud? No. Do I care? Not yet." },
       { type: "paragraph", text: "What really interesting is that there's only a current coming out of oscillator and that's the sound you get. It only takes creativity to make something sounds beautiful. No need to know any chord or anything. Pure creativity. I've read the book 'Catching the Big Fish' by David Lynch so many times. I keep thinking this is the big fish I'm looking for now. I just need to deep dive. All the beauty that the ocean hides are lying there."}
     ]
