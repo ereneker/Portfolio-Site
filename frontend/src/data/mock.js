@@ -10,7 +10,7 @@ import modularSynthImg from '../assets/modular-synth.png';
 
 export const siteInfo = {
   name: "EREN EKER",
-  title: "TECHNICAL GAME DESIGNER",
+  title: "GAME DEVELOPER",
   bio: "Game design student with a programming background, recently expanding into sound design.",
   location: "Based in Cologne, Germany",
   email: "ereneker5@gmail.com",
