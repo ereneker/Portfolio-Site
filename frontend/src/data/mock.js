@@ -3,6 +3,7 @@
 import dontPlayThePianoImg from '../assets/dont-play-the-piano.png';
 import mansBestFreundeImg from '../assets/mans-best-freunde.png';
 import anotherRoundImg from '../assets/another-round.png';
+import midsummerBreakdownImg from '../assets/midsummer-breakdown.png';
 import controlImg from '../assets/control-booth.jpeg';
 import arcRaidersImg from '../assets/arc-raiders.jpeg';
 import sadOImg from '../assets/sad-o.jpeg';
@@ -87,6 +88,14 @@ export const projects = [
     image: anotherRoundImg,
     description: "This project is a remake of the dance scene from the movie 'Another Round' using Unreal Engine 5. The goal was to recreate the scene with realistic lighting, animations, and sound design. My focus on the project was to set-up cameras & editing sounds. I created my own version with camera angles while staying true to original source.",
     link: "https://www.youtube.com/watch?v=cOdDak1SV5U&list=PPSV",
+  },
+  {
+    id: "midsummer-breakdown",
+    credit: "Personal Project",
+    title: "Midsummer Breakdown",
+    image: midsummerBreakdownImg,
+    description: "​This is a project we developed in two months for our 'Non-Linear Adaptation' course at TH Köln. My main responsibility was to create the sound design and music. Integrated what I created into the project. The goal of the project was to create a non-linear adaptation of Shakepeare's play 'Midsummer Night's Dream'.",
+    link: "https://ereneker.itch.io/midsummer-breakdown",
   }
 ];
 
